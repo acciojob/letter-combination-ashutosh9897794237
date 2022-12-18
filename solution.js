@@ -6,7 +6,7 @@ function letterCombinations(input_digits) {
            const queue=[''];
            for(const digit of digits){
              const len = queue.length;
-             for( let i=0; i<len i++) {
+             for( let i=0; i<len; i++) {
               const current = queue.shift();
               map[digit].split('').forEach(i => queue.push(current+i));
              }
